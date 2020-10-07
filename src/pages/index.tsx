@@ -20,7 +20,7 @@ export default function Index() {
           <h2>
             in case stack overflow goes d
             <span className="down">
-              <DownArrow width={26} height={21} fill={"#667eea"} />
+              <DownArrow width={26} height={21} fill={"#F27E63"} />
             </span>
             wn.
           </h2>
@@ -39,7 +39,7 @@ export default function Index() {
           font-size: 100px;
           margin: 0;
           font-weight: 500;
-          color: #667eea;
+          color: #f27e63;
         }
         h2 {
           font-family: "Montserrat", sans-serif;
