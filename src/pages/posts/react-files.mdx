@@ -1,0 +1,76 @@
+---
+slug: "react-files"
+title: "Optimal File Structure"
+date: 2020-10-06
+author: nolansym
+tags:
+  - organize
+  - productive
+---
+
+## Src Structure
+
+```jsx
+my-app
+└── src
+    └── assets
+    └── components/app
+    └── routes
+    └── utils
+    ├── index.js
+    ├── service-worker.js
+```
+
+## Assets Structure
+
+```jsx
+my-app
+└── src
+    └── assets
+	      └── images
+```
+
+## Components/app Structure
+
+```jsx
+my-app
+└── src
+    └── components
+        └── component-name
+        └── component-name
+        └── component-name
+        └── component-name
+        ├── app.jsx
+        ├── app.test.jsx
+        ├── index.js
+```
+
+## Component Structure
+
+```jsx
+my-app
+└── src
+    └── components
+        └── component-name
+            ├── component-name-container.jsx
+            ├── component-name-container.test.jsx
+            ├── component-name-redux.jsx
+            ├── component-name-redux.test.jsx
+            ├── component-name-view.jsx
+            └── component-name-view.test.jsx
+            └── index.js
+```
+
+## Routes Structure
+
+```jsx
+my-app
+└── src
+    └── routes
+	      └── home
+		    └── about
+				  ├── home.js
+			    ├── about.js
+			    ├── index.js
+
+```
