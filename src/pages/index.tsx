@@ -3,7 +3,8 @@ import BasicMeta from "../components/meta/BasicMeta";
 import OpenGraphMeta from "../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../components/meta/TwitterCardMeta";
 import { SocialList } from "../components/SocialList";
-import DownArrow from "../assets/down-arrow.svg";
+import Logo from "../assets/logo-svg.svg";
+import LogoDown from "../assets/logo-down.svg";
 
 export default function Index() {
   return (
@@ -13,6 +14,9 @@ export default function Index() {
       <TwitterCardMeta url={"/"} />
       <div className="container">
         <div>
+          <div className="logo">
+            <Logo />
+          </div>
           <h1 className="brand">
             nolly<span className="fancy">.</span>
           </h1>
@@ -20,7 +24,7 @@ export default function Index() {
           <h2>
             in case stack overflow goes d
             <span className="down">
-              <DownArrow width={26} height={21} fill={"#F27E63"} />
+              <LogoDown />
             </span>
             wn.
           </h2>
@@ -41,6 +45,7 @@ export default function Index() {
           font-weight: 500;
           color: #f27e63;
         }
+
         h2 {
           font-family: "Montserrat", sans-serif;
           font-size: 1.75rem;
@@ -48,6 +53,7 @@ export default function Index() {
           line-height: 1.25;
           color: #2d3748;
         }
+
         .fancy {
           font-family: "Montserrat", sans-serif;
           color: #2d3748;
