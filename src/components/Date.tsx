@@ -10,7 +10,7 @@ export default function Date({ date }: Props) {
       <style jsx>
         {`
           span {
-            background-color: #667eea;
+            background-color: #f27e63;
             color: #fff;
             border-radius: 3px;
             transition: background-color 0.3s ease;
