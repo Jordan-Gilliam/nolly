@@ -1,0 +1,71 @@
+---
+slug: "react-compose"
+title: "Think BEM to Compose React"
+date: 2020-10-07
+author: nolansym
+tags:
+  - organize
+  - pattern
+---
+
+Organize CSS and JS → BEM → LUS
+
+- **BLOCK**
+- **ELEMENT**
+- **MODIFIER**
+
+---
+
+# COMPOSITION
+
+```jsx
+function() {
+  return (
+    <ContainerComponent>
+      <LayoutComponent d={data}>
+        <Component />
+      </LayoutComponent>
+    </ContainerComponent>
+	)
+};
+```
+
+## LAYOUT COMPONENTS
+
+## UI COMPONENTS
+
+## STATE
+
+---
+
+## <ContainerComponent />
+
+**YES** Business logic
+
+**YES** Resolves modifier behavior state
+
+**YES** Events
+
+**YES** Fetch data
+
+## <LayoutComponent />
+
+**NO** Visual styles
+
+**NO** Business logic
+
+**YES** State modifiers
+
+**YES** Might affect child items
+
+## **<UiComponent />**
+
+**NO** Width || Height
+
+**NO** Display
+
+**NO** Business logic
+
+**YES** State modifiers
+
+**YES** Visual Element
