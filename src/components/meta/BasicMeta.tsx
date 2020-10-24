@@ -25,6 +25,10 @@ export default function BasicMeta({
         content={description ? description : config.site_description}
       />
       <meta
+        property="og:image"
+        content="https://nolly.dev/images/og_image.png"
+      />
+      <meta
         name="keywords"
         content={
           keywords

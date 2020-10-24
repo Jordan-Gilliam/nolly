@@ -17,6 +17,10 @@ export default function TwitterCardMeta({ url, title, description }: Props) {
         content={title ? [title, config.site_title].join(" | ") : ""}
       />
       <meta
+        property="twitter:text:title"
+        content={title ? [title, config.site_title].join(" | ") : ""}
+      />
+      <meta
         property="twitter:description"
         content={description ? description : config.site_description}
       />
